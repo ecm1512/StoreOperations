@@ -85,15 +85,4 @@ private val scopesModule = module {
         scoped { InsertMember(get()) }
         scoped { GetMember(get()) }
     }
-    /*scope(named<DetailActivity>()) {
-        viewModel { (id: Int) -> DetailViewModel(id, get(), get()) }
-        scoped { FindMovieById(get()) }
-        scoped { UpdateFavorite(get()) }
-    }
-    scope(named<FavoriteActivity>()) {
-        viewModel { FavoriteViewModel(get(), get()) }
-        scoped { DeleteMovie(get()) }
-        scoped { GetFavoriteMovies(get()) }
-
-    }*/
 }
